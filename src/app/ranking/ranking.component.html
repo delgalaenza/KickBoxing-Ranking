@@ -1,0 +1,23 @@
+<!-- HOME PAGE COMPONENT-->
+
+<div id="ranking-container" >
+  <mat-form-field appearance="fill">
+    <mat-label>Category</mat-label>
+    <select style="height:50px;" matNativeControl required>
+      <option value="FLYWEIGHT">FLYWEIGHT (- 51 kg)</option>
+      <option value="BANTAMWEIGHT">BANTAMWEIGHT (- 53.5 kg)</option>
+      <option value="FEATHERWEIGHT">FEATHERWEIGHT (- 57 kg)</option>
+      <option value="LIGHTWEIGHT">LIGHTWEIGHT (- 61 kg)</option>
+      <option value="WELTERWEIGHT">WELTERWEIGHT (- 67 kg)</option>
+      <option value="MIDDLEWEIGHT">MIDDLEWEIGHT (- 72.5 kg) </option>
+      <option value="CRUISERWEIGHT">CRUISERWEIGHT (- 91 kg) </option>
+      <option value="HEAVYWEIGHT">HEAVYWEIGHT (+ 91 kg)</option>
+    </select>
+  </mat-form-field>
+</div>
+
+
+
+<app-athlete-list [fighterSearched]="fighterSearched"></app-athlete-list>
+
+

@@ -1,0 +1,47 @@
+
+  <mat-toolbar class="mat-toolbar" >
+    <mat-toolbar-row >
+      <div fxShow="true" fxHide.gt-sm style=" padding-right:10px; ">
+      <button style="background-color: #7ECA9C;" mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      </div>
+
+      <span class="menu-spacer"></span>
+      <h1  fxShow="true" fxHide.lt-md style="color:#7ECA9C; padding-top: 10px; padding-right:5px;">KICKBOXING RANKING 🥊 </h1>
+
+      <div class="vl"></div>
+
+      <form class="example-form" >
+        <mat-form-field style="padding-left:10px;" class="example-full-width">
+          <input type="text" matInput placeholder="Find your fighter" name= "search"  [(ngModel)]= "fighterSearchedString"   (input)="inputChanged()">
+        </mat-form-field>
+        <br/>
+      </form>
+
+      <div fxShow="true" fxHide.lt-md>
+        <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+        <a href="#" mat-button>Ranking</a>
+        <a href="#" mat-button>Fighters</a>
+      </div>
+      <!--<img style="float:right" src="/assets/favicon.png" alt="logo">-->
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+
+  <!--PER RESPONSIVE MOBILE USO SIDENAV -->
+  <mat-sidenav-container fxFlexFill fxShow="true" fxHide.gt-sm >
+    <mat-sidenav  #sidenav>
+      <mat-nav-list >
+        <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+        <a href="#" mat-list-item>Ranking</a>
+        <a href="#" mat-list-item>Fighters</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+
+      <app-ranking></app-ranking>
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+

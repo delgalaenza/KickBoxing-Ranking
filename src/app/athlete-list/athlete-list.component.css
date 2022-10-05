@@ -1,0 +1,50 @@
+.tableContainer{
+  display:flex;
+  justify-content:center;
+  margin-top: 10px;
+  height: 480px;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.paginatorContainer{
+  display:flex;
+  justify-content:center;
+  width: 100%;
+}
+
+table, mat-paginator {
+  width: 90%;
+}
+
+mat-paginator{
+   font-size: 1.1em;
+   margin: 5px;;
+}
+
+.mat-header-cell{
+    font-weight: bold;
+    font-size: large;
+    color:black;
+}
+
+::ng-deep mat-option {
+  background:#7ECA9C!important;
+
+}
+
+::ng-deep mat-option.mat-selected {
+  background:#7ECA9C !important;
+}
+
+.header-table{
+  color:#7ECA9C
+}
+
+
+@media screen and ( min-height: 800px ) {
+  .tableContainer{
+    height: 600px;
+  }
+}
+

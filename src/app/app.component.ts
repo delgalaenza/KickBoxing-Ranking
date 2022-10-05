@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'kb-frontend';
+  fighterSearched="";
+
+  ngOnChanges(){
+    
+  }
+
+  updateTableFilter(fighterSearched: string) {
+    this.fighterSearched = fighterSearched;
+  }
+
 }
+
+

@@ -1,0 +1,27 @@
+#ranking-container {
+  background-color: #40394A;
+  display:flex;
+  justify-content: center;
+  height:75px;
+  align-items: center;
+  font-size: 15px;
+}
+
+mat-form-field{
+  width: 350px;
+  background-color:#7ECA9C;
+  /*height: 50px;*/
+}
+
+#selectContainer{
+  margin: 2px;
+}
+
+::ng-deep .mat-form-field-wrapper{
+  margin-bottom: -1.25em;
+}
+
+
+
+
+

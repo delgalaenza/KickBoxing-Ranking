@@ -1,0 +1,59 @@
+
+
+<div class="tableContainer">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!-- Ranking Column -->
+    <ng-container matColumnDef="ranking">
+      <th class="header-table" mat-header-cell *matHeaderCellDef> Ranking </th>
+      <td mat-cell *matCellDef="let athlete"> {{athlete.ranking}} </td>
+    </ng-container>
+
+    <!-- First Name Column -->
+    <ng-container matColumnDef="first_name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let athlete"> {{athlete.first_name}} {{athlete.last_name}} </td>
+    </ng-container>
+
+    <!-- Nickname Column -->
+    <ng-container matColumnDef="nickname">
+      <th mat-header-cell *matHeaderCellDef> Nickname </th>
+      <td mat-cell *matCellDef="let athlete"> {{athlete.nickname}} </td>
+    </ng-container>
+
+    <!-- Age Column -->
+    <ng-container matColumnDef="age">
+      <th mat-header-cell *matHeaderCellDef> Age </th>
+      <td mat-cell *matCellDef="let athlete"> {{athlete.DOB}} </td>
+    </ng-container>
+
+    <!-- Nationality Column -->
+    <ng-container matColumnDef="nationality">
+      <th mat-header-cell *matHeaderCellDef> Nationality </th>
+      <td mat-cell *matCellDef="let athlete"> {{athlete.nationality}} </td>
+    </ng-container>
+
+    <!-- Organization Column -->
+    <ng-container matColumnDef="organization">
+      <th mat-header-cell *matHeaderCellDef> Organization </th>
+      <td mat-cell *matCellDef="let athlete"> {{athlete.organization}} </td>
+    </ng-container>
+
+    <!-- Points Column -->
+    <ng-container matColumnDef="points">
+      <th mat-header-cell *matHeaderCellDef> Points </th>
+      <td mat-cell *matCellDef="let athlete"> {{athlete.points}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+    <tr> </tr>
+  </table>
+</div>
+
+<div class="paginatorContainer">
+  <mat-paginator [pageSizeOptions]="[10, 20, 30]" showFirstLastButtons >
+  </mat-paginator>
+</div>
+

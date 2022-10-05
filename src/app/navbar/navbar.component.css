@@ -1,0 +1,48 @@
+ a {
+   color:#7ECA9C;
+   padding-left: 20px;
+ }
+
+ body {
+ font-family: 'Rasa', serif;
+ font-weight: 300;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+ font-family: 'Barlow Condensed', sans-serif;
+ font-weight: 400;
+ text-transform: uppercase;
+ }
+
+ .button {
+ font-family: 'Barlow', sans-serif;
+ font-weight: 600;
+ font-size: 13px;
+ text-transform: uppercase;
+ letter-spacing: 3px;
+ }
+
+
+
+ .example-form{
+   height: 100%;
+   position: absolute;
+   right: 0;
+   top: 0;
+   background-color:#7ECA9C;
+ }
+
+
+ .vl {
+   border-left: 1px solid #7ECA9C;
+   height: 500px;
+ }
+
+ ::ng-deep .mat-toolbar{
+  background-color: #1C1427; 
+  position: sticky; 
+  top: 0;
+  z-index: 1000;
+  overflow: hidden;
+  border-bottom:1px solid #7ECA9C;
+ }

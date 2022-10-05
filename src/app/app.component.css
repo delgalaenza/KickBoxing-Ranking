@@ -1,0 +1,43 @@
+body {
+  font-family: 'Rasa', serif;
+  font-weight: 300;
+}
+
+/* html, body {
+  height: 100%;
+  margin: 0;
+} */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.button {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+
+
+/* #bodyContainer{
+  display:flex;
+} */
+
+footer {
+/*   position: relative; */
+}
+
+
+.footerContent{
+  position:fixed;
+  bottom:0;
+  width: 100%;
+  background-color: #1C1427;
+  color: #7ECA9C;
+  text-align: center;
+}
